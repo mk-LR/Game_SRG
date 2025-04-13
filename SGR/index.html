@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>SGR-トランプカードゲーム</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>S G R</h1>
+  <button id="rule-button">ルール</button>
+  <p>Player: <span id="scorePlayer">0</span> | CPU1: <span id="scoreCp1">0</span> | CPU2: <span id="scoreCp2">0</span></p>
+  <div id="turn-indicator">手札選択</div>
+  <div id="card-count">カードを３枚選ぼう</div>
+  <div id="card-ring"></div>
+  <div id="center-area"></div>
+  <div id="rule-popup" class="hidden">
+    <div class="rule-content">
+      <h2>ルール説明</h2>
+      <p>最初に手札を３枚選択します</p>
+      <p>カードを選択すると中央に移動します</p>
+      <p>既に置かれているカードと同じスートもしくは同じ数字なら成功です</p>
+      <p>異なるスート、異なる数字のカードを出すと積み重なったカードの枚数分のポイントが加算されます</p>
+      <p>裏向きに並んだカードが全てなくなった場合ゲームは終了です</p>
+      <p>最終ポイントの少ない人の勝ちとなります</p>
+      <p>「A」「J」「Q」「K」で成功した場合、再びその番のプレーヤーターンになってしまいます</p>
+      <p>　－「成功」とは積み重なっているカードが２枚以上になった場合を指します</p>
+      <p>JOKERが出されたもしくは既に置かれている場合、スートや数字に関係なく成功となります</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

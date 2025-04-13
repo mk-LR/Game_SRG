@@ -1,0 +1,100 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+#card-ring {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  margin: 30px auto;
+  border-radius: 50%;
+}
+
+.card {
+  position: absolute;
+  width: 60px;
+  height: 90px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: #222;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.6s, left 0.6s, top 0.6s, z-index 0.1s;
+}
+
+.center-place {
+  position: absolute;
+  width: 60px;
+  height: 90px;
+  background: lightgray;
+  border-radius: 8px;
+  border: 1px dashed #aaa;
+}
+
+.face-up-F {
+  background: white;
+}
+
+.face-up-H {
+  background: white;
+}
+
+.face-down {
+  background: #333;
+  color: #333;
+}
+
+.face-down-H1 {
+  background: #333;
+  color: #333;
+}
+
+.face-down-H2 {
+  background: #333;
+  color: #333;
+}
+
+#rule-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#rule-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 30px;
+  border: 2px solid #444;
+  border-radius: 12px;
+  z-index: 200;
+}
+
+.hidden {
+  display: none;
+}
+
+#turn-indicator {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+#card-count {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
